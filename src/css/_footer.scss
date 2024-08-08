@@ -1,0 +1,30 @@
+.footer {
+    background-color: var(--black_3);
+    color: var(--light);
+    flex-shrink: 0;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.53846;
+    position: relative;
+    z-index: 2;
+
+    &__container {
+        padding: 24px;
+        text-align: center;
+        @media(min-width: $md) {
+            padding: 48px 56px;
+        }
+    }
+
+    a {
+        align-items: center;
+        display: inline-flex;
+        gap: 8px;
+
+        svg {
+            fill: currentColor;
+            height: 16px;
+            width: 16px;
+        }
+    }
+}
