@@ -1,5 +1,49 @@
-<section class="form page-section">
+<section id="form" class="form page-section">
     <div class="container">
-        <h2>Запишитесь на <span class="color-green uppercase">бесплатную</span> консультацию и <span class="color-green uppercase">получите бонусы</span></h2>
+        <h2>Запишитесь на <span class="color-green uppercase">бесплатную</span> консультацию и <span class="color-green uppercase">получите&nbsp;бонусы</span></h2>
+
+        <div class="form__grid">
+            <div class="form__block">
+                <form action="">
+                    <div class="form__row">
+                        <label class="form__label" for="name">Имя</label>
+                        <input id="name" class="input error" type="text" name="name" value="" placeholder="не заполнено">
+                    </div>
+
+                    <div class="form__row">
+                        <label class="form__label" for="email_tg">E-mail / Telegram</label>
+                        <input id="email_tg" class="input" type="text" name="email_tg" value="" placeholder="не заполнено">
+                    </div>
+
+                    <div class="form__row">
+                        <label class="form__label" for="phone">Телефон</label>
+                        <input id="phone" class="input" type="text" name="phone" value="" placeholder="не заполнено">
+                    </div>
+
+                    <p class="send-success" style="display: none">Форма отправлена успешно!</p>
+
+                    <p class="send-error" style="display: none">Что-то пошло не так!<br> Попробуйте позже или свяжитесь с техподдержкой.</p>
+
+                    <button class="form__submit button button--green button--h_48" type="submit" disabled>Записаться</button>
+                </form>
+            </div>
+
+            <div class="form__block about-action">
+                <h3 class="about-action__title">Ваши бонусы!</h3>
+
+                <p class="discount">
+                    <span class="discount__value">20%</span>
+                    <span class="discount__text">скидка<br> на курс</span>
+                </p>
+
+                <p class="discount">
+                    <span class="discount__value">30%</span>
+                    <span class="discount__text">кэшбек<br> на торговый<br> депозит</span>
+                </p>
+
+                <p class="about-action__note">* Подробности акции Вы можете уточнить у нашего <a href="#" target="_blank">менеджера <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#tg" /></svg></a></p>
+            </div>
+        </div>
     </div>
 </section>

@@ -34,7 +34,7 @@
     &.disabled,
     &:disabled,
     &[data-disabled] {
-        background-color: var(--background);
+        background-color: #303030;
         color: var(--grey);
         cursor: default;
         pointer-events: none;
@@ -48,8 +48,18 @@
         }
 
         &.button--bordered {
-            border-color: var(--grey);
-            background-color: transparent;
+            border-color: #303030;
+            background-color: #303030;
+            color: var(--grey);
+
+            svg {
+                fill: var(--grey);
+            }
+        }
+
+        &:hover {
+            border-color: #303030;
+            background-color: #303030;
             color: var(--grey);
 
             svg {

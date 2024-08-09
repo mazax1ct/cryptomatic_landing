@@ -35,7 +35,7 @@
             justify-content: center;
             margin-bottom: 12px;
         }
-        @media(min-width: 992px) {
+        @media(min-width: $smd) {
             align-items: flex-end;
         }
         @media(min-width: $hd) {
@@ -60,7 +60,7 @@
 
     &__logo-partner,
     &__logo-text {
-        @media(max-width: 992px - 0.02px) {
+        @media(max-width: $smd - 0.02px) {
             display: none;
         }
     }

@@ -26,6 +26,8 @@ body {
     font-weight: 200;
     line-height: 1.6;
     min-height: 100vh;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
     @media(min-width: $hd) {
         font-size: 15px;
     }
