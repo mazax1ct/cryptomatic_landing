@@ -2,10 +2,15 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    max-height: 1080px;
     margin-bottom: 0;
     padding: 180px 16px 60px;
+    @media(max-width: $smd - 0.02) {
+        min-height: 100vh;
+    }
+    @media(min-width: $smd) {
+        height: 100vh;
+        max-height: 1080px;
+    }
     @media(min-width: $hd) {
         padding-bottom: 80px;
     }
